@@ -267,8 +267,3 @@ Contributions, bug reports, and feature requests are welcome. Please open issues
 - Authenticated Windows/Linux inventory modules
 - Improved TLS/Certificate correlation and caching
 
-## License
-
-This repository does not include a license file by default. Add a license that fits your intended terms (e.g., MIT, Apache-2.0) before publishing.
-
-
