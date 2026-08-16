@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <style>
+    .box { fill:#ffffff; stroke:#123029; stroke-width:2px; rx:8px }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size:13px; fill:#123029 }
+    .muted { font-size:11px; fill:#366b57 }
+    .arrow { stroke:#123029; stroke-width:2; fill:none; marker-end:url(#arrowhead) }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#123029"/>
+    </marker>
+  </defs>
+
+  <rect class="box" x="40" y="28" width="160" height="80" />
+  <text class="label" x="120" y="58" text-anchor="middle">Local Network</text>
+  <text class="muted" x="120" y="74" text-anchor="middle">ARP, ICMP, MAC</text>
+
+  <rect class="box" x="300" y="12" width="200" height="120" />
+  <text class="label" x="400" y="46" text-anchor="middle">NetSleuth</text>
+  <text class="muted" x="400" y="66" text-anchor="middle">nmap, curl, tcpdump, scripts</text>
+
+  <rect class="box" x="560" y="28" width="180" height="80" />
+  <text class="label" x="650" y="58" text-anchor="middle">External Intelligence</text>
+  <text class="muted" x="650" y="74" text-anchor="middle">WHOIS, RDAP, Shodan, Censys</text>
+
+  <path class="arrow" d="M200 68 L300 68" />
+  <path class="arrow" d="M500 68 L560 68" />
+
+  <rect class="box" x="300" y="160" width="200" height="90" />
+  <text class="label" x="400" y="190" text-anchor="middle">Reports</text>
+  <text class="muted" x="400" y="208" text-anchor="middle">raw/, enrichment/, pcap/</text>
+
+  <path class="arrow" d="M400 132 L400 160" />
+
+  <text class="muted" x="40" y="270">Diagram: discovery → enumeration → enrichment → reporting</text>
+</svg>
